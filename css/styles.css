@@ -4,14 +4,14 @@ a
 }
 body
 {
-	background: #EEEEEEE;
+	background: #EEEEEE;
 	font-family: Arial;
 	font-size: 16px;
 }
 footer
 {
 	background: #999;
-	color: white;
+	color: rgba(255,255,255,0.7);
 	padding: 1em;
 	text-align: center;
 }
@@ -22,6 +22,14 @@ footer p:first-child
 footer p:last-child
 {
 	margin-top: 0;
+}
+footer p:last-child:after
+{
+	content: " -"
+}
+footer p:last-child:before
+{
+	content: "- "
 }
 header
 {
@@ -99,4 +107,74 @@ nav ul li a
 	color: white;
 	display: block;
 	padding: 0.5em 0;
+}
+#contenido
+{
+	margin: 1em;
+}
+#contenido .item
+{
+	background: white;
+	border-bottom: 3px solid #999999;
+	margin-bottom: 3em;
+	min-height: 150px;
+	position: relative;
+}
+#contenido .item .autor_item
+{
+	color: #AAA;
+}
+#contenido .item .datos_item
+{
+	margin: 1em 1em 0 0; 
+	text-align: right;
+}
+#contenido .item .datos_item .fecha_item
+{
+	color: #AAA;
+}
+#contenido .item .datos_item .tag_item
+{
+	background: #DB4A37;
+	border-radius: 0.5em;
+	color: white;
+	float: left;
+	display: inline-block;
+	padding: 0.2em 0.5em;
+	text-decoration: none;
+}
+#contenido .item .imagen_item
+{
+	float: left;
+}
+#contenido .item .imagen_item img
+{
+	width: 150px;
+}
+#contenido .item .titulo_item
+{
+	font-size: 1.2em;
+	font-style: italic;
+	padding: 1em 1em 0 0;
+}
+#contenido .item .titulo_item a
+{
+	color: #444;
+	text-decoration: none;
+}
+#contenido .item .votacion
+{
+	background: white;
+	border-radius: 0 0 0.5em 0.5em;
+	left: 5%;
+	margin-top: 3px;
+	padding: 0.2em 0.5em;
+	position: absolute;
+	top: 100%;
+	width: 90%;
+}
+#contenido .item .votacion .comentarios_item,
+#contenido .item .votacion .guardar_item
+{
+	float: right;
 }
